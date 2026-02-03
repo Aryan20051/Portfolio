@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan | CS Student Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Aryan - Computer Science Student, Web Developer, and Cybersecurity Enthusiast. Building secure and scalable digital solutions.">
+    <meta name="keywords"
+        content="Aryan, Portfolio, Web Developer, Computer Science, Cybersecurity, React, Node.js, Python">
+    <meta name="author" content="Aryan">
+    <meta name="theme-color" content="#0a0a0b">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Design System -->
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="home">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="scanner"></div>
+            <div class="loading-text">INITIALIZING...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+    <nav class="navbar container">
+        <!-- Logo Removed -->
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="certifications.html" class="nav-link">Certifications</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="contact.html" class="nav-link hide-desktop">Contact</a>
+        </div>
+
+        <div class="nav-actions hide-mobile">
+            <a href="contact.html" class="nav-contact-btn">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle (Fixed Corner) -->
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="5" />
+                <path
+                    d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor hide-mobile"></div>
+    <div class="custom-cursor-outline hide-mobile"></div>
+
+    <!-- ============================================
+         HERO SECTION - Mobile-First High Impact
+         ============================================ -->
+    <header class="page-header page-header--hero container">
+        <!-- Lamp Removed from Top -->
+
+        <!-- Animated Background -->
+        <div class="page-header--hero-bg" aria-hidden="true">
+            <div class="page-header--hero-orb page-header--hero-orb--primary"></div>
+            <div class="page-header--hero-orb page-header--hero-orb--secondary"></div>
+            <div class="page-header--hero-grid"></div>
+        </div>
+
+        <div class="page-header--hero-content">
+            <!-- Status Badge -->
+            <div class="hero-status animate-on-load">
+                <span class="status-dot"></span>
+                <span>Available for opportunities</span>
+            </div>
+
+            <!-- Main Heading -->
+            <!-- lamp-text handles animation and gradient -->
+            <h1 class="page-header--hero-title lamp-text">
+                Hi, I'm <span class="hero-name-highlight">Aryan</span>
+            </h1>
+
+            <!-- Lamp Effect Positioned Behind Text -->
+            <div class="lamp-container">
+                <div class="lamp-bulb"></div>
+                <div class="lamp-conic-left"></div>
+                <div class="lamp-conic-right"></div>
+                <div class="lamp-beam-container">
+                    <div class="lamp-beam"></div>
+                </div>
+            </div>
+
+            <!-- Typing Role -->
+            <div class="hero-role animate-on-load delay-200">
+                <span class="hero-role-bracket">&lt;</span>
+                <span class="typing-text"></span>
+                <span class="hero-role-bracket">&gt;</span>
+            </div>
+
+            <!-- Tagline -->
+            <p class="hero-tagline animate-on-load delay-300">
+                A Computer Science student crafting secure,<br class="hide-mobile">
+                scalable, and intuitive digital experiences.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta animate-on-load delay-400">
+                <a href="projects.html" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="hero-scroll animate-on-load delay-500">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page">
+        <!-- ============================================
+             ABOUT SNAPSHOT
+             ============================================ -->
+        <section class="about-snapshot container section-py">
+            <div class="about-grid">
+                <!-- Left: Content -->
+                <div class="about-content reveal-on-scroll slide-in-left">
+                    <span class="section-label">About Me</span>
+                    <h2 class="about-title">
+                        Building the <span class="text-accent">future</span>,<br>
+                        one line at a time.
+                    </h2>
+                    <p class="about-text">
+                        I'm a CS student passionate about solving real-world problems through code.
+                        From full-stack web apps to cybersecurity research, I love exploring the
+                        intersection of technology and creativity.
+                    </p>
+
+                    <!-- Quick Stats -->
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+
+                    <a href="experience.html" class="btn btn-ghost about-link">
+                        Learn more about me →
+                    </a>
+                </div>
+
+                <!-- Right: Visual -->
+                <div class="about-visual reveal-on-scroll slide-in-right">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-dot terminal-dot--red"></span>
+                            <span class="terminal-dot terminal-dot--yellow"></span>
+                            <span class="terminal-dot terminal-dot--green"></span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">aryan@dev</span>
+                                <span class="terminal-text">:~$ whoami</span>
+                            </div>
+                            <pre class="terminal-output">{
+  "name": "Aryan Yadav",
+  "role": "CS Student",
+  "focus": [
+    "Full-Stack Dev",
+    "Cybersecurity",
+    "AI/ML"
+  ],
+  "status": "Open to work"
+}</pre>
+                            <div id="terminal-history"></div>
+                            <div class="terminal-input-line">
+                                <span class="terminal-prompt">aryan@dev</span><span class="terminal-text">:~$</span>
+                                <input type="text" id="terminal-input" spellcheck="false" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+         SKILLS SNAPSHOT
+         ============================================ -->
+        <section class="skills-snapshot section-py">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-label">What I Work With</span>
+                    <h2>Tech <span class="text-accent">Stack</span></h2>
+                </div>
+
+                <div class="skills-grid reveal-on-scroll">
+                    <!-- Skill Cards -->
+                    <div class="skill-card">
+                        <div class="skill-icon">💻</div>
+                        <h3>Languages</h3>
+                        <p>Python, JavaScript, TypeScript, Java, C++</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">⚛️</div>
+                        <h3>Frontend</h3>
+                        <p>React, Next.js, Tailwind, HTML/CSS</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🔧</div>
+                        <h3>Backend</h3>
+                        <p>Node.js, Express, PostgreSQL, Firebase</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🛡️</div>
+                        <h3>Security</h3>
+                        <p>OWASP, Cryptography, Wireshark</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+         PROJECTS OVERVIEW
+         ============================================ -->
+        <section class="featured-projects container section-py">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-label">Recent Work</span>
+                <h2>Featured <span class="text-accent">Projects</span></h2>
+            </div>
+
+            <div class="projects-grid reveal-on-scroll">
+                <!-- Project 1: Property Shodh -->
+                <article class="project-card project-card--preview" data-category="web">
+                    <div class="project-card-image">
+                        <div class="project-placeholder">
+                            <span class="project-emoji">🏠</span>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-title">Property Shodh</h3>
+                        <p class="project-desc">
+                            High-performance real estate website with LCP under 1s.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="projects.html" class="project-preview-link">
+                            View Project
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Virtual Office -->
+                <article class="project-card project-card--preview" data-category="fullstack">
+                    <div class="project-card-image">
+                        <div class="project-placeholder">
+                            <span class="project-emoji">🖥️</span>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-title">Virtual Office</h3>
+                        <p class="project-desc">
+                            Modern virtual workspace for remote team collaboration.
+                        </p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>WebRTC</span>
+                        </div>
+                        <a href="projects.html" class="project-preview-link">
+                            View Project
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-cta reveal-on-scroll">
+                <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+            </div>
+        </section>
+
+        <!-- ============================================
+         EXPERIENCE SNAPSHOT
+         ============================================ -->
+        <section class="experience-snapshot section-py">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-label">My Journey</span>
+                    <h2>Experience & <span class="text-accent">Education</span></h2>
+                </div>
+
+                <div class="experience-grid reveal-on-scroll">
+                    <!-- Current Role -->
+                    <div class="experience-card">
+                        <div class="experience-icon">💼</div>
+                        <div class="experience-content">
+                            <span class="experience-tag">Current Role</span>
+                            <h3>Junior Intern</h3>
+                            <p class="experience-company">O3GenAI Cloud</p>
+                            <p class="experience-date">Jan 2026 - Present</p>
+                            <p class="experience-desc">Gaining hands-on experience in cloud technologies and AI-powered
+                                solutions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="experience-card">
+                        <div class="experience-icon">🎓</div>
+                        <div class="experience-content">
+                            <span class="experience-tag">Education</span>
+                            <h3>BSc. Computer Science</h3>
+                            <p class="experience-company">Shree L.R Tiware Degree College</p>
+                            <p class="experience-date">2024 - 2027</p>
+                            <p class="experience-desc">Building a strong foundation in programming, algorithms, and
+                                software
+                                development.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-cta reveal-on-scroll">
+                    <a href="experience.html" class="btn btn-secondary">View Full Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+         CERTIFICATIONS OVERVIEW
+         ============================================ -->
+        <section class="certifications-overview section-py">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-label">Credentials</span>
+                    <h2>At a <span class="text-accent">Glance</span></h2>
+                </div>
+
+                <div class="cert-stats-grid reveal-on-scroll">
+                    <div class="cert-stat-card">
+                        <span class="cert-stat-number">7</span>
+                        <span class="cert-stat-label">Certifications</span>
+                    </div>
+                    <div class="cert-stat-card">
+                        <span class="cert-stat-number">4</span>
+                        <span class="cert-stat-label">Institutions</span>
+                        <span class="cert-stat-detail">Google, NPTEL, Coursera, LinkedIn</span>
+                    </div>
+                    <div class="cert-stat-card">
+                        <span class="cert-stat-number">5</span>
+                        <span class="cert-stat-label">Focus Areas</span>
+                        <span class="cert-stat-detail">Security, Python, Blockchain, AI, Data</span>
+                    </div>
+                </div>
+
+                <div class="certifications-cta reveal-on-scroll">
+                    <a href="certifications.html" class="btn btn-secondary">View All Certifications</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+         GITHUB STATS
+         ============================================ -->
+        <section class="github-stats section-py">
+            <div class="container reveal-on-scroll">
+                <div class="section-header">
+                    <span class="section-label">Open Source</span>
+                    <h2>GitHub <span class="text-accent">Activity</span></h2>
+                </div>
+
+                <div class="github-grid">
+                    <div class="github-card animate-pulse-border">
+                        <div class="github-card-header">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            <h3>Repositories</h3>
+                        </div>
+                        <div id="github-repos" class="github-value">
+                            <div class="skeleton skeleton-text"></div>
+                        </div>
+                    </div>
+
+                    <div class="github-card animate-pulse-border">
+                        <div class="github-card-header">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            <h3>Commits (Year)</h3>
+                        </div>
+                        <div id="github-commits" class="github-value">
+                            <div class="skeleton skeleton-text"></div>
+                        </div>
+                    </div>
+
+                    <div class="github-card animate-pulse-border">
+                        <div class="github-card-header">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            <h3>Total Stars</h3>
+                        </div>
+                        <div id="github-stars" class="github-value">
+                            <div class="skeleton skeleton-text"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="github-footer">
+                    <a href="https://github.com/Aryan20051" target="_blank" rel="noopener" class="btn btn-secondary">
+                        Follow on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+         CALL TO ACTION
+         ============================================ -->
+        <section class="cta-section">
+            <div class="container reveal-on-scroll">
+                <div class="cta-content">
+                    <h2 class="cta-title">Let's Build Something <span class="text-accent">Amazing</span></h2>
+                    <p class="cta-text">
+                        Have a project in mind? Looking for a developer intern?<br class="hide-mobile">
+                        I'm always open to discussing new opportunities.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+                        <a href="docs/resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container section-py">
+        <div class="footer-content">
+            <p class="footer-text">
+                &copy; 2026 Aryan. Built with <span class="text-accent">passion</span> and clean code.
+            </p>
+            <div class="footer-links">
+                <a href="https://github.com/Aryan20051" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/aryan-yadav01" target="_blank" rel="noopener"
+                    aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+                <a href="mailto:aryan.yadav.prof@gmail.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/terminal.js"></script>
+</body>
+
+</html>
